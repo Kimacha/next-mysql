@@ -1,0 +1,47 @@
+import fetch from 'isomorphic-unfetch'
+import Link from 'netxt/link'
+
+HomePage.getInitialProps = async ({req, query}) => {
+    const protocol = req 
+    ? `${req.headers['x-forwarded-protocol']}:`
+    : location.protocol
+
+    const host = req ? req.headers[x-forwarded-host] : location.host
+    const pageRequest = `${protocol}//${host}/api/profiles?page=${query.page || 1}& limit=${query.limit || 9}`
+    const res = await fetch(pageRequest)
+    const json = await res.json()
+    return json
+}
+
+function HomePage ({profiles, page, pageCount}) {
+    return (
+        <>
+        <ul>
+            {profiles.map(p => (
+                <li className="profile" key={p.id}>
+                    <Link href={`/profile?id=${p.id}`}>
+                        <a>
+                            <img src={p.avatar} />
+                            <span>{p.name}</span>
+                        </a>
+                    </Link>
+                </li>
+            ))}
+        </ul>
+        <nav>
+            {page > 1 && (
+                <Link href={`/?page=${page-1}&limit=9`}>
+                    <a>Prev</a>
+                </Link>
+            )}
+            {page > 1 && (
+                <Link href={`/?page=${page+1}&limit=9`}>
+                    <a>Next</a>
+                </Link>
+            )}
+        </nav>
+        </>
+    )
+}
+
+export default HomePage
