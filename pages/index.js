@@ -1,12 +1,12 @@
 import fetch from 'isomorphic-unfetch'
-import Link from 'netxt/link'
+import Link from 'next/link'
 
 HomePage.getInitialProps = async ({req, query}) => {
     const protocol = req 
     ? `${req.headers['x-forwarded-protocol']}:`
     : location.protocol
 
-    const host = req ? req.headers[x-forwarded-host] : location.host
+    const host = req ? req.headers['x-forwarded-host'] : location.host
     const pageRequest = `${protocol}//${host}/api/profiles?page=${query.page || 1}& limit=${query.limit || 9}`
     const res = await fetch(pageRequest)
     const json = await res.json()
