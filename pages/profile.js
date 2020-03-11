@@ -14,7 +14,7 @@ ProfilePage.getInitialProps = async ({ req, query }) => {
 
 function ProfilePage({profile}) {
     return (
-        <>
+    
             <div>
                 <img src={profile.avatar} />
                 <h1>{profile.name}</h1>
@@ -24,7 +24,7 @@ function ProfilePage({profile}) {
                     <a>Back to Profiles</a>
                 </Link>
             </div>
-        </>
+        
     )
 }
 
