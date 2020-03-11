@@ -36,7 +36,7 @@ function HomePage ({profiles, page, pageCount}) {
                     <a>Prev</a>
                 </Link>
             )}
-            {page > 1 && (
+            {page > pageCount && (
                 <Link href={`/?page=${page+1}&limit=9`}>
                     <a>Next</a>
                 </Link>
