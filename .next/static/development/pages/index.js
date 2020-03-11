@@ -4310,7 +4310,8 @@ var _jsxFileName = "/Users/kim/Documents/Programming Resources/next-mysql/pages/
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-
+ // import react from 'react'
+// import react-dom from 'react-dom'
 
 HomePage.getInitialProps = function _callee(_ref) {
   var req, query, protocol, host, pageRequest, res, json;
@@ -4349,7 +4350,7 @@ function HomePage(_ref2) {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   }, profiles.map(function (p) {
@@ -4358,66 +4359,66 @@ function HomePage(_ref2) {
       key: p.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 23
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
       href: "/profile?id=".concat(p.id),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 24
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 25
       },
       __self: this
     }, __jsx("img", {
       src: p.avatar,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 26
       },
       __self: this
     }), __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 27
       },
       __self: this
     }, p.name))));
   })), __jsx("nav", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 33
     },
     __self: this
   }, page > 1 && __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/?page=".concat(page - 1, "&limit=9"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 36
     },
     __self: this
   }, "Prev")), page > 1 && __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/?page=".concat(page + 1, "&limit=9"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 40
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 41
     },
     __self: this
   }, "Next"))));
