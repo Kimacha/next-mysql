@@ -814,7 +814,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_82519ec661270f7f484f
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!***************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fkim%2FDocuments%2FProgramming%20Resources%2Fnext-mysql%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
   \***************************************************************************************************************************************************************************************************************/
@@ -837,5 +837,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

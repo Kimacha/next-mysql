@@ -4427,7 +4427,7 @@ function HomePage(_ref2) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkim%2FDocuments%2FProgramming%20Resources%2Fnext-mysql%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************************************/
@@ -4450,5 +4450,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

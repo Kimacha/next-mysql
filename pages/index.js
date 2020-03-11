@@ -1,5 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
+import react from 'react'
+// import react-dom from 'react-dom'
 
 HomePage.getInitialProps = async ({req, query}) => {
     const protocol = req 

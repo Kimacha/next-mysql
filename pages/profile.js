@@ -27,3 +27,5 @@ function ProfilePage({profile}) {
         </>
     )
 }
+
+export default ProfilePage
